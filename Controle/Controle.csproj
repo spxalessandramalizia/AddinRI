@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68FA6431-C002-440E-92E0-4E4AC2516E49}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Controle</RootNamespace>
+    <AssemblyName>Controle</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\spxcapital\pastascompartilhadas\RI\Project Triton\Programas\Controle\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>23</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C59304B7A7A61A92068A2A3B18596E1B787C8E42</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Controle_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\CONTROLE.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configurações\Arquivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configurações\Arquivos.designer.cs">
+      <DependentUpon>Arquivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gerencial\Cotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerencial\Cotas.Designer.cs">
+      <DependentUpon>Cotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resgates\BoletaResgate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resgates\BoletaResgate.designer.cs">
+      <DependentUpon>BoletaResgate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\CadastroCotista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\CadastroCotista.designer.cs">
+      <DependentUpon>CadastroCotista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\CadastroConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\CadastroConta.designer.cs">
+      <DependentUpon>CadastroConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacional\CaixaGestor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacional\CaixaGestor.designer.cs">
+      <DependentUpon>CaixaGestor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacional\ContaOrdem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacional\ContaOrdem.designer.cs">
+      <DependentUpon>ContaOrdem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacional\Controle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacional\Controle.designer.cs">
+      <DependentUpon>Controle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resgates\ControleResgates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resgates\ControleResgates.designer.cs">
+      <DependentUpon>ControleResgates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gerencial\DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerencial\DashBoard.designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gerencial\LogErro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerencial\LogErro.designer.cs">
+      <DependentUpon>LogErro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gerencial\Movimentacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerencial\Movimentacoes.designer.cs">
+      <DependentUpon>Movimentacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacional\NovaOrdem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacional\NovaOrdem.designer.cs">
+      <DependentUpon>NovaOrdem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacional\OrdemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Operacional\OrdemControl.designer.cs">
+      <DependentUpon>OrdemControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gerencial\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerencial\Principal.designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Configurações\Senhas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configurações\Senhas.designer.cs">
+      <DependentUpon>Senhas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operacional\SubOrdens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operacional\SubOrdens.designer.cs">
+      <DependentUpon>SubOrdens.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Configurações\Arquivos.resx">
+      <DependentUpon>Arquivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerencial\Cotas.resx">
+      <DependentUpon>Cotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerencial\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resgates\BoletaResgate.resx">
+      <DependentUpon>BoletaResgate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\CadastroCotista.resx">
+      <DependentUpon>CadastroCotista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\CadastroConta.resx">
+      <DependentUpon>CadastroConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacional\CaixaGestor.resx">
+      <DependentUpon>CaixaGestor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacional\ContaOrdem.resx">
+      <DependentUpon>ContaOrdem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacional\Controle.resx">
+      <DependentUpon>Controle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resgates\ControleResgates.resx">
+      <DependentUpon>ControleResgates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerencial\DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerencial\LogErro.resx">
+      <DependentUpon>LogErro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerencial\Movimentacoes.resx">
+      <DependentUpon>Movimentacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacional\NovaOrdem.resx">
+      <DependentUpon>NovaOrdem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacional\OrdemControl.resx">
+      <DependentUpon>OrdemControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Configurações\Senhas.resx">
+      <DependentUpon>Senhas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operacional\SubOrdens.resx">
+      <DependentUpon>SubOrdens.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Controle_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{6c29b251-0f26-4b0d-9b32-658877f2bb1d}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimaze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spx-capital-logo-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CONTROLE.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
